@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Contact Us</title>
+
+    </head>
+    <body class="index">
+        <h1>Contact Us</i></h1>
+        
+        <ul class="navbar_ul">
+          <li class="navbar_li"><a href="/code/index.html">Home</a></li>
+          <li class="navbar_li"><a href="/code/aboutus.html">About Us</a></li>
+          <li class="navbar_li"><a href="/code/contact.html">Contact</a></li>
+          <li class="navbar_li"><a id="comingsoon">Coming Soon...</a></li>
+          <li class="navbar_li2" onclick="loginalert()"><a href="/code/login.html">Log in</a></li>
+          <li class="navbar_li2" onclick="createanaccountalert()"><a href="/code/createanaccount.html">Create an account</a></li>
+        </ul>
+        <div class="graybg"> 
+            <div class="location">
+                <p style="font-size:200%;">We are located here:<br>
+                <a href="http://maps.google.com/?q=Antarctica" target="_blank">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33859098.71777259!2d-12.328587300000013!3d-58.80400019999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb09dff882a7809e1%3A0xb08d0a385dc8c7c7!2sAntarctica!5e0!3m2!1sen!2ssg!4v1640772777924!5m2!1sen!2ssg" id="img_location" allowfullscreen="" loading="lazy"></iframe>
+                </a> 
+            </div>
+
+            <div class="contact_alignment">
+                <form class="contact_form" autocomplete="off">
+                    <p style="text-align:center;font-size:160%;">
+                        <b>Let us know how to serve you better!</b>
+                    </p>
+                    Name: <input type="text" id="yourname" placeholder="Name" required><br>
+                    Email: &nbsp<input type="email" id="youremail" placeholder="Email" required><br><br>
+                    How can we help you?<br> 
+                    <textarea id="suggestions" placeholder="Suggestions" required></textarea><br>
+
+                    <input type="checkbox" id="T&C" name="T&C" value="newaccount" required>
+                    <label for="T&C" style="font-size:70%;">I have read and accepted the <a href="/terms.html" class="quicklinks" target="_blank">Terms of Speech</a>.</label><br>
+                    <input type="submit" value="Submit" id="contact_submission" onclick="submitformalert()"><br><br>
+                    <div style="font-size:70%;">
+                        Return to <a href="/code/index.html" class="quicklinks">Home</a>.
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            
+            function loginalert() {
+                alert("You are heading to the Login page. Continue?");
+            };
+            
+            function createanaccountalert() {
+                alert("You are about to create an account. Continue?");
+            };
+
+            function submitformalert() {
+                alert("You are about to submit a form. Continue?");
+            };
+        
+        </script>
+
+    </body>
+</html>
